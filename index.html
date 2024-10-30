@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke Detector - Physical Computing Project 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smoke Detector</h1>
+        <h2>Physical Computing Project 2024 - IT KMITL</h2>
+    </header>
+
+    <section class="intro">
+        <p>โครงงานนี้เป็นส่วนหนึ่งของวิชา Physical Computing โดยมีวัตถุประสงค์เพื่อศึกษาและพัฒนาทักษะการเขียนโปรแกรมภาษา C และการใช้งานบอร์ด Arduino ทั้งจากการเรียนรู้ในห้องเรียนและการศึกษาเพิ่มเติมด้วยตนเอง คณะผู้จัดทำหวังเป็นอย่างยิ่งว่าโครงงานนี้จะเป็นประโยชน์แก่ผู้ที่สนใจศึกษาและสามารถนำไปพัฒนาต่อยอดเพื่อความสมบูรณ์และประสิทธิภาพที่ดียิ่งขึ้นในอนาคต</p>
+    </section>
+
+    <nav class="contents">
+        <ul>
+            <li><a href="#poster">poster</a></li>
+            <li><a href="#origin">ที่มาของโครงงาน</a></li>
+            <li><a href="#objective">จุดประสงค์</a></li>
+            <li><a href="#benefits">ประโยชน์</a></li>
+            <li><a href="#equipment">อุปกรณ์</a></li>
+            <li><a href="#working-principle">หลักการทำงาน</a></li>
+            <li><a href="#demo">Youtube สาธิตการทำงาน</a></li>
+            <li><a href="#members">Member</a></li>
+        </ul>
+    </nav>
+
+    <section id="poster">
+        <h3>poster</h3>
+        <div class="poster">
+            <img src="SmokeDetector.png"/>
+        </div>
+    </section>
+
+    <section id="origin">
+        <h3>ที่มาของโครงงาน</h3>
+        <p>ปัจจุบัน การเกิดเพลิงไหม้เป็นอันตรายใกล้ตัวที่มักทำให้ผู้คนทราบถึงเหตุการณ์เมื่อเพลิงไหม้ลุกลามไปแล้ว ทางคณะผู้จัดทำได้ตระหนักถึงปัญหานี้ จึงได้นำความรู้เกี่ยวกับ Arduino มาพัฒนาโครงงานเครื่องตรวจจับควัน ซึ่งสามารถส่งข้อความแจ้งเตือนผ่านแอปพลิเคชัน Line เพื่อให้สามารถป้องกันการลุกลามของเพลิงไหม้ได้อย่างทันท่วงที</p>
+    </section>
+
+    <section id="objective">
+        <h3>จุดประสงค์</h3>
+        <ul>
+            <li>เพื่อศึกษาการเขียนโปรแกรมภาษา C ในการควบคุมเซนเซอร์และอุปกรณ์ต่าง ๆ บนบอร์ด Arduino</li>
+            <li>เพื่อออกแบบและสร้างเครื่องตรวจจับควันด้วย Arduino ที่สามารถตรวจจับควันและแจ้งเตือนผู้ใช้เมื่อเกิดควันไฟ</li>
+            <li>เพื่อพัฒนาเครื่องตรวจจับควันที่สามารถส่งข้อความเตือนผ่านแอปพลิเคชัน Line เพื่อแจ้งเหตุไฟไหม้ได้ทันที</li>
+            <li>เพื่อเพิ่มความสามารถในการป้องกันและลดความเสี่ยงจากการเกิดเพลิงไหม้ในอาคารหรือสถานที่ต่าง ๆ</li>
+            <li>เพื่อสร้างโครงงานที่สามารถนำไปพัฒนาต่อยอดให้เกิดความสมบูรณ์และประสิทธิภาพมากยิ่งขึ้น</li>
+        </ul>
+    </section>
+
+    <section id="benefits">
+        <h3>ประโยชน์</h3>
+        <ul>
+            <li>ช่วยลดความเสี่ยงจากการเกิดเพลิงไหม้ ด้วยการตรวจจับควันได้อย่างรวดเร็วและแจ้งเตือนทันที</li>
+            <li>เพิ่มความปลอดภัยในบ้านหรือสถานที่ทำงาน โดยเฉพาะในกรณีที่ผู้ใช้งานไม่สามารถมองเห็นหรือได้กลิ่นควัน</li>
+            <li>ลดความเสียหายต่อชีวิตและทรัพย์สิน ด้วยการแจ้งเตือนก่อนที่เพลิงไหม้จะลุกลาม</li>
+            <li>เป็นต้นแบบสำหรับการศึกษาและพัฒนาระบบตรวจจับและเตือนภัยที่มีประสิทธิภาพมากยิ่งขึ้น</li>
+            <li>ส่งเสริมการเรียนรู้ด้าน Physical Computing, การเขียนโปรแกรม C, และการใช้งานบอร์ด Arduino เพื่อประยุกต์ใช้ในชีวิตประจำวัน</li>
+        </ul>
+    </section>
+
+    <section id="equipment">
+        <h3>อุปกรณ์</h3>
+        <ul>
+            <li>Arduino UNO</li>
+            <img src="ArduinoUNO.webp"/>
+            <li>LED</li>
+            <img src="LED.jpg"/>
+            <li>Jumper Wires</li>
+            <img src="JumperWires.webp"/>
+            <li>MQ-2 Smoke Gas Sensor</li>
+            <img src="MQ-2.jpg"/>
+        </ul>
+    </section>
+
+    <section id="working-principle">
+        <h3>หลักการทำงาน</h3>
+        <ol>
+            <li>ให้ต่ออุปกรณ์แล้ว อัพโหลดโค้ดลง Arduino uno</li>
+            <li>รออุปกรณ์ Calibrating ประมาณ 2 3 วินาที</li>
+            <li>ค่าที่ขึ้นมาจะมีเป็น 0 ทั้งหมด เพราะยังไม่มีการเกิดควัน</li>
+            <li>ตรวจจับควัน ถ้าเราจะตรวจจับแก็สมีเทน ให้เรากดไฟแช็คแล้วนำไปวางใกล้ๆ เซ็นเซอร์ตรวจจับควัน MQ2 ค่า LPG , CO , SMOKE ที่อ่านได้จะสูงขึ้น</li>
+            <img src="4.png"/>
+            <li>ถ้าค่า LPG , CO , SMOKE เกินค่าที่กำหนด ไฟ LED จะขึ้น และมีการแจ้งเตือนผ่าน LINE Application</li>
+            <img src="5.jpg"/>
+        </ol>
+    </section>
+
+    <section id="demo">
+        <h3>Youtube สาธิตการทำงาน</h3>
+        <p><a href="https://www.youtube.com/watch?v=SjFC09XNLUY">Watch Youtube</a></p>
+        <img src="qr.png"/>
+    </section>
+
+    <section id="members">
+        <h3>Member</h3>
+        <div class="member">
+            <img src="max.jpg" alt="นายกฤษดา เอนกธนกุล 66070007">
+            <p>นายกฤษดา เอนกธนกุล 66070007</p>
+        </div>
+        <div class="member">
+            <img src="japan.jpg" alt="นายชินกิจ ฤกษ์ดี 66070048">
+            <p>นายชินกิจ ฤกษ์ดี 66070048</p>
+        </div>
+        <div class="member">
+            <img src="got.jpg" alt="นายฐาปนพงศ์ พงษ์บริบูรณ์ 66070053">
+            <p>นายฐาปนพงศ์ พงษ์บริบูรณ์ 66070053</p>
+        </div>
+        <div class="member">
+            <img src="ongsa.jpg" alt="นายองศา เทียนชัย 66070212">
+            <p>นายองศา เทียนชัย 66070212</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>รายงานนี้เป็นส่วนหนึ่งของวิชา Physical Computing ภาคเรียนที่ 1 ปีการศึกษา 2567 สาขาเทคโนโลยีสารสนเทศ คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+    </footer>
+</body>
+</html>

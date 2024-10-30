@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2C3E50;
+    background-color: #F5F6FA;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #861c1c;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #BDC3C7;
+}
+
+.intro {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #7F8C8D;
+    text-align: center;
+}
+
+.contents ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.contents a {
+    background: #c24412;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+.contents a:hover {
+    background: #cf683f;
+    transform: translateY(-3px);
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #34495E;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c24412;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul, ol {
+    margin: 10px 0 10px 20px;
+    color: #2C3E50;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #861c1c;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.poster img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.member img {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member p {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #34495E;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 50%;
+    }
+}
